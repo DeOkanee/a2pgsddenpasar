@@ -1,0 +1,105 @@
+/* Generic CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #2b2b2b;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#text-atas{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+p {
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+#text1{
+    margin-top: 22px;
+}
+#text2{
+    margin-top: 22px;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+#main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#message {
+    margin-top: 15px;
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    #main {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    #text-atas{
+        font-size: 17px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 18px;
+    }
+    #text-atas{
+        font-size: 17px;
+        text-align: center;
+    }
+    .text{
+        margin: auto 15px;
+        margin-top: 25px;
+    }
+    p {
+        font-size: 19px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 9px 16px;
+    }
+}

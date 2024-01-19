@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwibbonDO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="semua">
+        <div id="twibbon-container">
+            <img id="user-image" src="" alt="User Image">
+            <img id="template" src="img/TWIBBONA2.png" alt="Twibbon Template">
+        </div>
+    
+        <div id="controls">
+            <label for="image-input" id="upload-foto-label">Upload Foto:</label>
+            <label class="upload-btn-wrapper">
+                <span class="btn">Pilih Foto</span>
+                <input class="foto-masuk" type="file" id="image-input" accept="image/*" style="cursor: pointer;">
+            </label>
+            <br>
+            <label for="scale">Scale:</label>
+            <input type="range" id="scale" min="0" max="3" step="0.1" value="1">
+            <br>
+            <label for="x-position">X Position:</label>
+            <input type="range" id="x-position" min="-50" max="50" step="1" value="0">
+            <br>
+            <label for="y-position">Y Position:</label>
+            <input type="range" id="y-position" min="-50" max="50" step="1" value="0">
+            <br>
+            <button id="download-btn">Download Twibbon</button>
+        </div>
+
+        <!-- Tambahkan elemen terpisah untuk menampilkan gambar pengguna -->
+        <div id="user-image-container" style="display: none;"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
