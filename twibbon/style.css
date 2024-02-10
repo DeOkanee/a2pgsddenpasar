@@ -1,17 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #e2fcfc;
-}
-
-.semua {
+  }
+  
+  .semua {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,29 +23,46 @@ body {
     border-radius: 9px;
     padding-top: 3%;
     padding-bottom: 3%;
-}
-
-#twibbon-container {
+  }
+  
+  #twibbon-container {
     position: relative;
-    width: 350px; /* Sesuaikan dengan ukuran templat */
-    height: 350px; /* Tetapkan tinggi agar sama dengan lebar untuk membentuk persegi */
-    overflow: hidden; /* Menyembunyikan konten yang keluar dari batas */
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
     background-color: #ffffff;
     border: 20px solid rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 0 0 15px 8px #0000003d;
-}
-
-#user-image, #template {
+  }
+  
+  #user-image-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #user-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #template,
+  #user-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Menggunakan contain untuk mempertahankan aspek rasio dan menghindari pemotongan */
-}
-
-#controls {
+    object-fit: contain;
+  }
+  
+  #controls {
     width: 45vh;
     margin-top: 7%;
     background-color: #e2fcfc;
@@ -53,25 +70,26 @@ body {
     border-radius: 9px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-}
-
-#upload-foto-label {
+    margin-top: 20px;
+  }
+  
+  #upload-foto-label {
     display: block;
     margin-top: 20px;
-}
-
-.foto-masuk {
+  }
+  
+  .foto-masuk {
     display: none;
-}
-
-.upload-btn-wrapper {
+  }
+  
+  .upload-btn-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;
     padding: 15px 15px;
-}
-
-.btn {
+  }
+  
+  .btn {
     border: 2px solid #39c0b3;
     color: #39c0b3;
     background-color: white;
@@ -81,36 +99,36 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: #39c0b3;
     color: white;
-}
-
-.upload-btn-wrapper input[type=file] {
+  }
+  
+  .upload-btn-wrapper input[type=file] {
     font-size: 100px;
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
     cursor: pointer;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
     color: #000000;
-}
-
-input[type="file"],
-input[type="range"] {
+  }
+  
+  input[type="file"],
+  input[type="range"] {
     width: 80%;
     margin-bottom: 10px;
-}
-
-#download-btn {
+  }
+  
+  #download-btn {
     margin-top: 15px;
     margin-bottom: 25px;
     padding: 10px 20px;
@@ -120,8 +138,9 @@ input[type="range"] {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-}
-
-#download-btn:hover {
+  }
+  
+  #download-btn:hover {
     background-color: #0066cc;
-}
+  }
+  
